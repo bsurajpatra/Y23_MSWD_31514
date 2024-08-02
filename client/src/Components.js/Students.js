@@ -1,31 +1,41 @@
-import React from 'react'
+import React from 'react';
 
 const Students = () => {
   return (
     <div>
-        <h2>Student Details</h2>
-        <u1>
-            <li>
-                Student ID: 2300031514
-                Name: B Suraj Patra
-                Branch: CSE
-                Year: 2nd Year
-            </li>
-            <li>
-                Student ID: 2300031943
-                Name: A. Abhinandan
-                Branch: CSE
-                Year: 2nd Year
-            </li>
-            <li>
-                Student ID: 2300032009
-                Name: G. Sri Krishna Sudhindra
-                Branch: CSE
-                Year: 2nd Year
-            </li>
-        </u1>
+      <table>
+        <caption><h2>Student Details</h2></caption>
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Branch</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2300031514</td>
+            <td>B Suraj Patra</td>
+            <td>CSE</td>
+            <td>2nd Year</td>
+          </tr>
+          <tr>
+            <td>2300031943</td>
+            <td>A. Abhinandan</td>
+            <td>CSE</td>
+            <td>2nd Year</td>
+          </tr>
+          <tr>
+            <td>2300032009</td>
+            <td>G. Sri Krishna Sudhindra</td>
+            <td>CSE</td>
+            <td>2nd Year</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Students
+export default Students;

@@ -58,3 +58,10 @@ footer {
   text-align: center;
  margin-top:auto
 }
+
+table{
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+}

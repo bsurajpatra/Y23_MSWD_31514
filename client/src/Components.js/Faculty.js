@@ -1,28 +1,37 @@
-import React from 'react'
+import React from 'react';
 
 const Faculty = () => {
   return (
     <div>
-        <h2 className="faculty"> Faculty Details</h2>
-       <u1>
-          <li>
-            Name: Mr. B Ashok
-            Designation: Assistant Professor
-            Department: CSE
-          </li>
-          <li>
-            Name: Dr. T Srinivas Rao
-            Designation: Associate Professor
-            Department: Mathematics
-          </li>
-          <li>
-            Name: V. Murali Mohan
-            Designation: Professor
-            Department: CSE
-          </li>
-       </u1>
+      <table>
+      <caption><h2>Faculty Details</h2></caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Designation</th>
+            <th>Department</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mr. B Ashok</td>
+            <td>Assistant Professor</td>
+            <td>CSE</td>
+          </tr>
+          <tr>
+            <td>Dr. T Srinivas Rao</td>
+            <td>Associate Professor</td>
+            <td>Mathematics</td>
+          </tr>
+          <tr>
+            <td>V. Murali Mohan</td>
+            <td>Professor</td>
+            <td>CSE</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-  )
+  );
 }
 
-export default Faculty
+export default Faculty;
