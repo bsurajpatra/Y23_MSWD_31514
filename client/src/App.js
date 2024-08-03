@@ -6,6 +6,8 @@ import Students from './Components.js/Students';
 import Courses from './Components.js/Courses';
 import Footer from './Components.js/Footer';
 import Feedback from './Components.js/Feedback';
+import TimeTable from './Components.js/TimeTable';
+import Assignments from './Components.js/Assignments';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Students/>
       <Courses/>
       <Feedback/>
+      <TimeTable/>
+      <Assignments/>
       <Footer/>
     </div>
   );
