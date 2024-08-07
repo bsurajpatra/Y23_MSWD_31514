@@ -1,16 +1,9 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-header {
@@ -37,7 +30,7 @@
   }
 }
 
-.header{
+.header {
   background-color: rgb(222, 10, 10);
   margin-top: auto;
 }
@@ -47,21 +40,46 @@ html, body {
   margin: 0;
 }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
 
 footer {
-  background-color: #e40909; 
+  background-color: #e40909;
   text-align: center;
- margin-top:auto
+  margin-top: auto;
 }
 
-table{
+table {
   margin: 20px auto;
   border-collapse: collapse;
   width: 100%;
-  max-width: 600px;
+  max-width: 800px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+th {
+  background-color: #f20909;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+tbody tr:hover {
+  background-color: #e9e9e9;
 }

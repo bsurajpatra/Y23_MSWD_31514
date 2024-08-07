@@ -1,4 +1,13 @@
+// Students.js
 import React from 'react';
+import Attendance from './Attendance';
+
+const studentData = [
+  { id: '2300031514', name: 'B Suraj Patra', branch: 'CSE', year: '2nd Year' },
+  { id: '2300031943', name: 'A. Abhinandan', branch: 'CSE', year: '2nd Year' },
+  { id: '2300032009', name: 'G. Sri Krishna Sudhindra', branch: 'CSE', year: '2nd Year' },
+  { id: '2300031415', name: 'G. Manoj', branch: 'CSE', year: '2nd Year'},
+];
 
 const Students = () => {
   return (
@@ -11,27 +20,19 @@ const Students = () => {
             <th>Name</th>
             <th>Branch</th>
             <th>Year</th>
+            <th>Attendance</th> 
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>2300031514</td>
-            <td>B Suraj Patra</td>
-            <td>CSE</td>
-            <td>2nd Year</td>
-          </tr>
-          <tr>
-            <td>2300031943</td>
-            <td>A. Abhinandan</td>
-            <td>CSE</td>
-            <td>2nd Year</td>
-          </tr>
-          <tr>
-            <td>2300032009</td>
-            <td>G. Sri Krishna Sudhindra</td>
-            <td>CSE</td>
-            <td>2nd Year</td>
-          </tr>
+          {studentData.map(student => (
+            <tr key={student.id}>
+              <td>{student.id}</td>
+              <td>{student.name}</td>
+              <td>{student.branch}</td>
+              <td>{student.year}</td>
+              <td><Attendance /></td> 
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

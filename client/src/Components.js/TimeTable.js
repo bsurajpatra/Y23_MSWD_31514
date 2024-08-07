@@ -1,8 +1,8 @@
 import React from 'react';
 
 const TimeTable = () => {
+  const headerRow = ['Slot', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'];
   const timetable = [
-    ['Slot', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
     ['Monday', '***', '***', 'DAA-M202', 'DAA-M202', 'NPS-R301B', 'NPS-R301B', 'MWD-C406', '***', 'DBMS-C423', '***', '***'],
     ['Tuesday', '***', '***', 'DBMS-C318A', 'DBMS-C318A', 'PSQT-C225', 'PSQT-C225', '***', 'LAA-C421B1', 'LAA-C421B1', 'DAA-M121', '***'],
     ['Wednesday', '***', '***', 'NPS-R304A', 'NPS-R304A', 'DBMS-C422', 'DBMS-C422', '***', 'MWD-C017', 'MWD-C017', 'SIL-S101', 'SIL-S101'],
@@ -14,6 +14,13 @@ const TimeTable = () => {
     <div className="timetable-container">
       <h1>Weekly Time Table</h1>
       <table className="timetable-table">
+        <thead>
+          <tr>
+            {headerRow.map((headerCell, index) => (
+              <th key={index}>{headerCell}</th>
+            ))}
+          </tr>
+        </thead>
         <tbody>
           {timetable.map((row, rowIndex) => (
             <tr key={rowIndex}>
