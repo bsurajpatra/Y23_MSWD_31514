@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const FeedBackForm = ({ onSubmit }) => {
   const [cName, setCName] = useState("");
   const [facName, setFacName] = useState("");
-  const [commSkills, setCommSkills] = useState("Select");
+  const [commSkills, setCommSkills] = useState("1");
   const [remarks, setRemarks] = useState("NA");
 
   const handleSubmit = (event) => {
@@ -17,7 +17,7 @@ const FeedBackForm = ({ onSubmit }) => {
     onSubmit(newFeedback);
     setCName("");
     setFacName("");
-    setCommSkills("Select");
+    setCommSkills("1");
     setRemarks("NA");
   };
 

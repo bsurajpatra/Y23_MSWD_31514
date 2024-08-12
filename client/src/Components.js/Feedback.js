@@ -17,8 +17,8 @@ const Feedback = () => {
           <tr>
             <th>Name</th>
             <th>Course</th>
-            <th>Feedback Type</th>
-            <th>Suggestion/Issue</th>
+            <th>Speaking Skills Rating</th>
+            <th>Remarks</th>
           </tr>
         </thead>
         <tbody>

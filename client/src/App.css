@@ -74,12 +74,3 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
-
-tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-
-tbody tr:hover {
-  background-color: #e9e9e9;
-}
